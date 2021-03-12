@@ -29,7 +29,7 @@ a:hover {
 
 .content {
   text-align: center; 
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('pizza-baked-chesse-spicy-7t-1920x1080.jpg') no-repeat;
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('images/pizza-baked-chesse-spicy-7t-1920x1080.jpg') no-repeat;
   -moz-background-size: cover; 
   -webkit-background-size: cover; 
   -o-background-size: cover; 
@@ -168,6 +168,66 @@ a:hover {
 .expand {
   max-height: 100em;
 }
+.about_block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -1em;
+  margin-left: -3.5em;
+  align-items: center;
+}
+
+.about_block:not(:first-of-type) {
+
+  margin-top: 80px;
+  margin-bottom: 80px;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+.about_block:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.about_block__item {
+  padding-top: 1em;
+  padding-left: 3.5em;
+}
+.about_block__item--body {
+  flex-grow: 9999;
+  flex-basis: 15rem;
+}
+.about_block__item--figure {
+  margin-right: auto;
+  flex-grow: 1;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+}
+
+.about_block__item * + * {
+  margin-top: 1em;
+}
+.about_block a:hover {
+  color:#DAA520 !important;
+}
+
+@supports ((max-width: -webkit-max-content) or (max-width: -moz-max-content) or (max-width: max-content)) {
+  .about_block__item--figure {
+    min-width: 12rem;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    flex-basis: 12rem;
+    flex-grow: 9999;
+  }
+}
+
+
 
 @media only screen and (min-width: 768px) {
   .wrap {
@@ -192,9 +252,7 @@ a:hover {
     float: right;
     max-height: none;
   }
-  .navbar .menu {
-    /* box-shadow: 0 -3px 0 #bc3a3a inset; */
-  }
+
   .navbar .menu li {
     list-style-type: none;
     display: inline-block;
@@ -220,7 +278,7 @@ a:hover {
         width: 100%;
     }
     .navbar {
-      background-image:url(backgroundPizza.png);
+      background-image:url(images/backgroundPizza.png);
       background-repeat: no-repeat;
       background-size: cover;
     }
