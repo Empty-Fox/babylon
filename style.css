@@ -305,4 +305,16 @@ img {
       font-size: 40px;
       line-height: 40px;     
     }
+    .about_block__item {    
+      padding-left: 0;
+  }
+.about_block__item.about_block__item--body {
+  
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.about_block:not(:first-of-type) {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 }
