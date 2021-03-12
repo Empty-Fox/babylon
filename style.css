@@ -126,14 +126,14 @@ a:hover {
   -o-transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  border-bottom: 1px solid #DAA520;
+  border-bottom: 1px solid #936d02;
 }
 .navbar .menu li a:hover {
   /* background-color: #df9797; */
 }
 .navbar .menu li a.active {
   /* background-color: #d98383; */
-  color: #DAA520;
+  color: #936d02;
 }
 .menu li:nth-child(2) a::before, .menu li:nth-child(3) a::before ,.menu li:nth-child(4) a::before, .menu li:nth-child(5) a::before {
     font-family: FontAwesome;
@@ -153,7 +153,7 @@ a:hover {
   font-size: 70px;
   line-height: 70px;
   font-family: 'Kaushan Script', cursive;
-  color: #DAA520;
+  color: #936d02;
 }
 .welcomeText p:nth-child(2){
   margin-top: -13px;
@@ -188,17 +188,18 @@ a:hover {
 .about_block:nth-child(even) {
   flex-direction: row-reverse;
 }
-.about_block__item {
-  padding-top: 1em;
-  padding-left: 3.5em;
-}
+
 .about_block__item--body {
   flex-grow: 9999;
   flex-basis: 15rem;
+  
+  padding-left: 5rem;
 }
 .about_block__item--figure {
   margin-right: auto;
   flex-grow: 1;
+  
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
 }
 
 img {
@@ -213,7 +214,7 @@ img {
   margin-top: 1em;
 }
 .about_block a:hover {
-  color:#DAA520 !important;
+  color:#936d02 !important;
 }
 
 @supports ((max-width: -webkit-max-content) or (max-width: -moz-max-content) or (max-width: max-content)) {
@@ -226,9 +227,174 @@ img {
     flex-grow: 9999;
   }
 }
+.our_specialities {
+  text-align: center; 
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('images/hero-specialities.jpg') no-repeat;
+  -moz-background-size: cover; 
+  -webkit-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+.our_specialities div:first-child {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto; 
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+}
+.our_specialities div:first-child p {
+  color: #ffffff;
+  font-size: 46px;
+  line-height: 56px; 
+  font-family: kaushan script; 
+  padding-top: 50px; 
+  padding-bottom: 50px;
+}
+.flex-item div {
+  margin-top: -150px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: white;
+  position: relative;
+  
+  box-shadow: rgb(0 0 0) 0px 20px 30px -10px;
+}
+.flex-item div a h3 {
+  color: black; 
+  font-family: Montserrat;
+  font-weight: 500; 
+  margin-bottom: 7px;
+  font-size: 23px;
+  line-height: 33px;
+}
+.flex-item div a:hover h3 {
+  color: #936d02;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+
+}
+
+.flex-item {
+  background-color: #f1f1f1;                   
+  flex: 25%;
+  margin-left: 30px;
+
+}
+.flex-item-text p {
+  font-size: 15px !important;
+  line-height: 24px !important;
+  padding: 0 20px !important;     
+  color: #999 !important;
+}
+.menu_block {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.menu_block h2 {
+  text-align: center; 
+  font-family: kaushan script; 
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 56px;    
+  margin-top: 50px; 
+  transition: all .2s ease;
+}
+.menu_line {
+  width: 100px;
+  height: 3px;
+  display: table;
+  position: relative;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #936d02;
+  margin-bottom: 50px;
+}
+
+.menu_block h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700; 
+  color: #a5a5a5; 
+  font-family: Montserrat;  
+  font-size: 23px;
+  line-height: 33px;
+  margin: 1.2em 0;
+  margin-bottom: 17px;
+}
+.row {
+  display: flex;
+}
+
+.columnMain {
+  flex: 50%;
+}
+.rowMain {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row1 .rowMain .column:first-child {
+  background-image: url(https://demo.tagdiv.com/newspaper_restro/wp-content/uploads/2017/10/chicken-soup.jpg);       
+}
+.row2 .rowMain .column:first-child {
+  background-image: url(https://demo.tagdiv.com/newspaper_restro/wp-content/uploads/2017/10/turkey-breast.jpg);  
+}
+.row3 .rowMain .column:first-child {
+  background-image: url(https://demo.tagdiv.com/newspaper_restro/wp-content/uploads/2017/10/tiramisu.jpg);
+}
 
 
+.rowMain .column:first-child {  
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 75px;
+  padding-right: 22px;
+  display: table-cell;
+}
+.rowMain .column:nth-child(2){
+  vertical-align: middle;    
+  display: table-cell; 
+  width: 60%;
+  padding-left: 20px;
+}
+.rowMain .column:nth-child(2) h3 {
+  font-family: Montserrat;    
+  margin: 0;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.rowMain .column:nth-child(2) P {
+  color: #999;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
 
+.rowMain .column:nth-child(3) {
+  width: 20%; 
+  color: #936d02;
+}
 @media only screen and (min-width: 768px) {
   .wrap {
     padding-left: 6em;
@@ -270,9 +436,11 @@ img {
   }
 }
 @media only screen and (max-width:768px){
+  .flex-container {
+    flex-direction: column;
+  }
     .header, .wrap {
-        background-color: #222 ;
-      
+        background-color: #222 ;      
         position: absolute;
         z-index: 9;
         width: 100%;
@@ -305,9 +473,8 @@ img {
       font-size: 40px;
       line-height: 40px;     
     }
-    .about_block__item {    
-      padding-left: 0;
-  }
+   
+  
 .about_block__item.about_block__item--body {
   
   padding-left: 20px;
@@ -316,5 +483,52 @@ img {
 .about_block:not(:first-of-type) {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+.flex-item {
+  margin-left: 0;
+  margin-top: 10px;
+}
+.our_specialities {
+  height: 100%;
+}
+.row {
+  display: block;
+}
+.rowMain .column:first-child, .rowMain .column:nth-child(2), .rowMain .column:nth-child(3) {
+  display: inline-block;
+}
+.rowMain .column:first-child {
+  width: 70px;
+  background-size: cover;  
+
+}
+.row1 .rowMain .column:first-child {
+  margin-bottom: -20px;
+}
+.row2 .rowMain .column:first-child {
+  margin-bottom: -20px;
+}
+.row3 .rowMain .column:first-child {
+  margin-bottom: -30px;
+}
+
+.rowMain .column:nth-child(2) {
+  width: 50%;
+}
+.rowMain .column:nth-child(2) h3 {
+  font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    color: black;
+    font-weight: 600;
+}
+.rowMain .column:nth-child(3) { 
+  width: auto;
+  font-size: 15px;
+}
+.rowMain .column:nth-child(2) p {  
+  font-size: 12px;
+  line-height: 18px;
 }
 }
