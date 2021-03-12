@@ -1,0 +1,250 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  font-family: "Nunito", Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+a {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
+.content {
+  text-align: center; 
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('pizza-baked-chesse-spicy-7t-1920x1080.jpg') no-repeat;
+  -moz-background-size: cover; 
+  -webkit-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;
+  height: 100vh;
+  background-position: center; 
+}
+
+/* Navigation Styles */
+/* Header */
+.header {
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  height: 90px;
+  line-height: 90px;
+  /* box-shadow: 0 -3px 0 #0f0f0f inset; */
+}
+
+.wrap {
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: inherit;
+  font-size: 1.5em;
+  margin-left: 1em;
+}
+.logo a {
+  /* color: #fff; */
+  text-decoration: none;
+  opacity: 1;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.logo a:hover {
+  opacity: 0.85;
+}
+
+/* Mobile menu */
+#menu-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 1em;
+  /* color: #fff; */
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 1;
+  padding: 0 0.4em;
+}
+#menu-icon:hover {
+  opacity: 0.85;
+  text-decoration: none;
+  border: none;
+}
+
+.navbar {
+  background-color: transparent;
+  float: none;
+  max-height: 0;  
+  overflow: hidden;
+  -moz-transition: max-height 0.4s;
+  -o-transition: max-height 0.4s;
+  -webkit-transition: max-height 0.4s;
+  transition: max-height 0.4s;
+}
+.navbar .menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 800;
+    
+    text-transform: uppercase;
+
+
+}
+.navbar .menu li {
+  list-style-type: none;
+  display: block;
+}
+.navbar .menu li a {
+  display: block;
+  text-decoration: none;
+  /* color: #fff; */
+  padding: 0 0.8em;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid #DAA520;
+}
+.navbar .menu li a:hover {
+  /* background-color: #df9797; */
+}
+.navbar .menu li a.active {
+  /* background-color: #d98383; */
+  color: #DAA520;
+}
+.menu li:nth-child(2) a::before, .menu li:nth-child(3) a::before ,.menu li:nth-child(4) a::before, .menu li:nth-child(5) a::before {
+    font-family: FontAwesome;
+    content: "\f111";
+    margin: 10px;
+   font-size: 5px;
+}
+.welcomeText {
+    position: absolute;
+    top: 40vh;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;   
+}
+.welcomeText p:first-child {
+  font-size: 70px;
+  line-height: 70px;
+  font-family: 'Kaushan Script', cursive;
+  color: #DAA520;
+}
+.welcomeText p:nth-child(2){
+  margin-top: -13px;
+  font-size: 61px;
+  line-height: 61px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+.expand {
+  max-height: 100em;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrap {
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .logo, .navbar {
+    display: inline-block;
+  }
+
+  /* Mobile menu icon */
+  #menu-icon {
+    display: none;
+  }
+
+  .navbar {
+    float: right;
+    max-height: none;
+  }
+  .navbar .menu {
+    /* box-shadow: 0 -3px 0 #bc3a3a inset; */
+  }
+  .navbar .menu li {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+  }
+  .navbar .menu li a {
+    display: block;
+    border-bottom: 0;
+  }
+  .navbar .menu li a:hover {
+    /* box-shadow: 0 -3px 0 indianred inset; */
+  }
+  .navbar .menu li a.active {
+    /* box-shadow: 0 -3px 0 indianred inset; */
+  }
+}
+@media only screen and (max-width:768px){
+    .header, .wrap {
+        background-color: #222 ;
+      
+        position: absolute;
+        z-index: 9;
+        width: 100%;
+    }
+    .navbar {
+      background-image:url(backgroundPizza.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .menu li:nth-child(2) a::before, .menu li:nth-child(3) a::before, .menu li:nth-child(4) a::before, .menu li:nth-child(5) a::before {
+      content: none;
+    }
+    .navbar .menu li:nth-child(6){
+      padding-left: 0 !important;
+    float: left;
+    width: 30px;
+    }
+    .navbar .menu li:nth-child(7){
+      width: 30px;
+    display: contents;
+    }
+    .menu li:nth-child(7) a {
+      background-color: #222 ;
+    }
+    .welcomeText p:first-child {
+      font-size: 50px;
+      line-height: 50px;
+    }
+    .welcomeText p:nth-child(2){     
+      font-size: 40px;
+      line-height: 40px;     
+    }
+}
