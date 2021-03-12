@@ -4,3 +4,5 @@ $(document).ready(function(){
       return false;
     });
   });
+
+  document.getElementById("year").innerHTML = new Date().getFullYear();
